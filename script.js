@@ -76,6 +76,7 @@ document.querySelector("#container").addEventListener("click", (e) => {
   console.log(e.target);
   if (noOfCells == 100) {
     alert("victory bro");
+    location.reload();
   } else if (e.target.id === "true") {
     incrementClick();
     console.log(e.target);
