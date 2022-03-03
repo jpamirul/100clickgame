@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>100 click</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="header"><h3>100 click game</h3></div>
+      <h3>Click this colour  <img src="red.jpg"></h3>
+      <h2><b>Your Score</b></h2>
+      <h3 id="counter-label">0</h3>
+      <h2><b>Timer</b></h2>
+      <h3 id="timer"></h3>
+    </div>
+    <div class="main">
+      <button onclick="startClick()">Start</button>
+      <button onclick="resetCounter()">Reset</button>
+      <div class="speed">
+        <button class= "btn" id="easy" onclick="set50()">50 Seconds</button>
+        <button class= "btn" id="medium" onclick="set40()">40 Seconds</button>
+        <button class= "btn" id="hard" onclick="set30()">30 Seconds</button></div>
+    </div>
+    <div class="box">
+      <div id="container"></div>
+  </body>
+  <script src="script.js"></script>
+</html>
