@@ -1,0 +1,37 @@
+.header {
+  margin: 0 auto;
+  text-decoration: underline;
+}
+.main {
+  border: solid black 1px;
+  width: 500px;
+  height: 50;
+  text-align: center;
+  margin: 0 auto;
+}
+.box {
+  border: solid black 1px;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  /* justify-content: space-evenly; */
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+td {
+  border: solid black 1px;
+}
+
+.rowDiv {
+  border: solid black 1px;
+  width: 3em;
+  height: 3em;
+  /* color: #ffffff00; */
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
