@@ -1,6 +1,6 @@
-var counterVal = 0;
+let counterVal = 0;
 let timer;
-var timeLeft = 0;
+let timeLeft = 0;
 let box = document.querySelector(".box");
 let container = document.querySelector("#container");
 let noOfCells = 0;
@@ -38,7 +38,6 @@ function incrementClick() {
 
   cbBox.forEach((cb) => {
     cb.id = "false";
-    //cb.style.backgroundColor = "white";const color1 = Math.floor(Math.random() * 256);
     const color1 = Math.floor(Math.random() * 256);
     const color2 = Math.floor(Math.random() * 256);
     const color3 = Math.floor(Math.random() * 256);
@@ -47,28 +46,7 @@ function incrementClick() {
 
   const randomBox = cbBox[Math.floor(Math.random() * cbBox.length)];
   randomBox.id = "true";
-  //cbBox.forEach((cb) => {
-  //if (cb.id === "true") {
-  // const color1 = Math.floor(Math.random() * 256);
-  // const color2 = Math.floor(Math.random() * 256);
-  // const color3 = Math.floor(Math.random() * 256);
   randomBox.style.backgroundColor = `rgb(${255}, ${0}, ${0})`;
-  //}
-  //});
-
-  // cbBox.forEach((cb) => {
-  //   cb.addEventListener("click", (e) => {
-  //     console.log(cb);
-  //     if (cb.id === "true") {
-  //       incrementClick();
-  //       console.log(cb.id);
-  //     } else {
-  //       cb.addEventListener("click", gameOver);
-  //       console.log(cb.id);
-  //     }
-  //   });
-  // });
-
   noOfCells++;
 }
 
